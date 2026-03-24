@@ -7,11 +7,7 @@
   <style>
     * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
 
-    body {
-      background: #0f172a;
-      color: white;
-      line-height: 1.6;
-    }
+    body {background: #0f172a; color: white;}
 
     header {
       display: flex;
@@ -29,43 +25,33 @@
       margin-left: 20px;
       color: white;
       text-decoration: none;
-      transition: 0.3s;
     }
 
     nav a:hover {color: #38bdf8;}
 
     .hero {
       text-align: center;
-      padding: 100px 20px;
+      padding: 80px 20px;
     }
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 10px;
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #38bdf8;
     }
 
+    .hero h2 {font-size: 35px;}
     .hero span {color: #38bdf8;}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #38bdf8;
-      color: black;
-      border-radius: 20px;
-      text-decoration: none;
-    }
-
     section {
-      padding: 60px 20px;
+      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
 
-    h2 {
-      margin-bottom: 20px;
-      color: #38bdf8;
-    }
+    h2 {color: #38bdf8; margin-bottom: 20px;}
 
     .projects {
       display: grid;
@@ -77,10 +63,20 @@
       background: #020617;
       padding: 20px;
       border-radius: 15px;
-      transition: transform 0.3s;
+      text-align: center;
     }
 
-    .card:hover {transform: scale(1.05);}
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    .btn:hover {background: #0ea5e9;}
 
     footer {
       text-align: center;
@@ -101,31 +97,34 @@
 </header>
 
 <section class="hero">
-  <h2>Hello, I'm <span>Udit</span></h2>
-  <p>IT Student | Developer | Future Cybersecurity Expert</p>
-  <a href="#projects" class="btn">View My Work</a>
+  <!-- ADD YOUR IMAGE HERE -->
+  <img src="yourimage.jpg" alt="Profile Image">
+  
+  <h2>Hello, I'm <span>Udit Vaibhav Pant</span></h2>
+  <p>IT Student | Developer </p>
 </section>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>I am a BTech student passionate about coding, web development, and cybersecurity. I love building projects and learning new technologies.</p>
+  <p>I am a BTech student passionate about coding & Full stack development</p>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
   <div class="projects">
+
     <div class="card">
       <h3>Bus Reservation System</h3>
       <p>Developed using C with file handling.</p>
+      <a href="https://your-bus-project-link.com" class="btn" target="_blank">View Project</a>
     </div>
+
     <div class="card">
       <h3>Gaming Website</h3>
       <p>Created using HTML, CSS, JavaScript.</p>
+      <a href="https://your-gaming-site-link.com" class="btn" target="_blank">View Project</a>
     </div>
-    <div class="card">
-      <h3>Portfolio Website</h3>
-      <p>Personal website to showcase my work.</p>
-    </div>
+
   </div>
 </section>
 
